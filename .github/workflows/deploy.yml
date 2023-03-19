@@ -17,8 +17,8 @@ jobs:
     steps:  # 自动化步骤
       - uses: actions/checkout@v2     # 第一步，检出仓库副本
       
-      - name: Use Node.js ${{ matrix.node-version }} 
-        uses: actions/setup-node@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
