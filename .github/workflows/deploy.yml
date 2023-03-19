@@ -7,27 +7,36 @@ on:
     paths-ignore:   # 下列文件的变更不触发部署
       - README.md
       - LICENSE
-
+  
 jobs:
   build-production:
+  
+    strategy:
+      matrix:
+        node_version: [16.x]
 
-    runs-on: ubuntu-latest   # 使用ubuntu系统镜像运行自动化脚本
+    runs-on: ubuntu-latest            # 使用ubuntu系统镜像运行自动化脚本
     steps:  # 自动化步骤
-      - uses: actions/checkout@v2   # 第一步，检出仓库副本
+      - uses: actions/checkout@v2     # 第一步，检出仓库副本
+      
+      - name: Use Node.js ${{ matrix.node-version }} 
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}  #规定node.js版本(可不配置)
 
-      - name: Install dependencies  # 第二步，安装依赖
+      - name: Install dependencies    # 第二步，安装依赖
         run: npm install
 
-      - name: Build                 # 第三步，打包代码
+      - name: Build                   # 第三步，打包代码
         run: npm run build --if-present
 
-      - name: Deploy to Server  # 第四步，rsync推送文件
-        uses: AEnterprise/rsync-deploy@v1.0  # 使用别人包装好的步骤镜像
+      - name: Deploy to Server        # 第四步，rsync推送文件
+        uses: AEnterprise/rsync-deploy@v1.0  # 使用他人包装好的步骤镜像
         env:
-          DEPLOY_KEY: ${{ secrets.SSH_TOKEN }}   # 引用配置，SSH私钥
+          DEPLOY_KEY: ${{ secrets.SSH_TOKEN }}    # 引用配置，SSH私钥
           ARGS: -avz --delete --exclude='*.pyc'   # rsync参数，排除.pyc文件
           SERVER_PORT: '22'                       # SSH端口
-          FOLDER: ./dist/*                       # 要推送的文件夹，路径相对于代码仓库的根目录
-          SERVER_IP: ${{ secrets.SSH_HOST }}  # 引用配置，服务器的host名（IP或者域名domain.com）
+          FOLDER: ./dist/*                        # 要推送的文件夹，路径相对于代码仓库的根目录
+          SERVER_IP: ${{ secrets.SSH_HOST }}      # 引用配置，服务器的host名（IP或者域名domain.com）
           USERNAME: ${{ secrets.SSH_USERNAME }}   # 引用配置，服务器登录名
-          SERVER_DESTINATION: /www/wwwroot/lmsworld.cn/   # 部署到目标文件夹
+          SERVER_DESTINATION: /root/blog/dist/    # 部署到目标文件夹
