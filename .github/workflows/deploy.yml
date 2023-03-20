@@ -34,8 +34,8 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_TOKEN }}
           ARGS: "-avz --delete"
           SOURCE: "dist/"
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+          REMOTE_HOST: 39.108.216.190
+          REMOTE_USER: root
           TARGET: /root/blog/dist/
 
       
