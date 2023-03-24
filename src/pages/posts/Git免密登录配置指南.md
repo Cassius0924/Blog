@@ -5,10 +5,10 @@ pubDate: 2023-03-24
 description: '这是一个简单教程，旨在帮助大家实现免密SSH登录，省去每次输入用户名和密码的烦恼。'
 author: 'Cassius0924'
 cover:
-    url: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
-    square: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
+    url: 'https://s2.loli.net/2023/03/24/wH3xWXve6C5NOAm.png'
+    square: 'https://s2.loli.net/2023/03/24/wH3xWXve6C5NOAm.png'
     alt: 'GitHub'
-tags: ["Linux", "SSH"]
+tags: ["Linux", "SSH", "Passwordless"]
 theme: 'light'
 featured: false
 ---

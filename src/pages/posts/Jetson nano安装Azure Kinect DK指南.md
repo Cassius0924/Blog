@@ -5,15 +5,17 @@ pubDate: 2023-03-24
 description: '这是一个简单教程，旨在帮助大家实现免密SSH登录，省去每次输入用户名和密码的烦恼。'
 author: 'Cassius0924'
 cover:
-    url: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
-    square: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
-    alt: 'GitHub'
+    url: 'https://s2.loli.net/2023/03/24/HZq6GLmaM839s7b.jpg'
+    square: 'https://s2.loli.net/2023/03/24/HZq6GLmaM839s7b.jpg'
+    alt: 'Azure Kinect'
 tags: ["Linux", "Ubuntu", "Jetson", "Azure Kinect", "Microsoft"]
 theme: 'light'
 featured: false
 ---
 
 # Jetson nano 安装 Azure Kinect DK 指南
+
+![Azure Kinect](https://s2.loli.net/2023/03/24/IwUxHR56CdVWjOZ.jpg)
 
 该项目提供了一个简单的指南，帮助用户在 NVIDIA Jetson Nano 上正确安装 Azure Kinect DK。
 
