@@ -1,4 +1,3 @@
-
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Google 搜索引擎使用技巧'
@@ -15,8 +14,6 @@ featured: false
 ---
 
 # Google 搜索引擎使用技巧
-
-
 
 ## 1. “ ”——准确搜索
 
@@ -86,4 +83,8 @@ featured: false
 
 通过define:关键词得到准确定义 eg: define:internet
 
+<<<<<<< HEAD
 > 例如：define:internet
+=======
+> 例如：define:internet
+>>>>>>> 278466767590dddb5ae6b624ea6b89494237b7d3

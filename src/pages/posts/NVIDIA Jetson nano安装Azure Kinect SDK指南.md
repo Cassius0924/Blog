@@ -21,7 +21,7 @@ featured: false
 
 Jetson nano是ARM架构，而非AMD架构。所以环境配置起来会和AMD架构的有所不同。
 
-## :computer: 需求
+## 需求
 
 在开始安装 Azure Kinect DK 之前，请确保您的 Jetson Nano 满足以下要求：
 
@@ -137,4 +137,8 @@ cd ~/Azure-Kinect-Sensor-SDK-1.4.1/build/bin
 
 ## 写在最后
 
+<<<<<<< HEAD
 不知为何，通过[微软官方教程](https://learn.microsoft.com/zh-cn/azure/kinect-dk/sensor-sdk-download)的apt安装方法，在`apt install`时死活找不到包，明明已经配置了[Microsoft的包储存库](https://learn.microsoft.com/zh-cn/windows-server/administration/linux-package-repository-for-microsoft-software)。😅
+=======
+不知为何，通过[微软官方教程](https://learn.microsoft.com/zh-cn/azure/kinect-dk/sensor-sdk-download)的apt安装方法，在`apt install`时死活找不到包，明明已经配置了[Microsoft的包储存库](https://learn.microsoft.com/zh-cn/windows-server/administration/linux-package-repository-for-microsoft-software)。😅
+>>>>>>> 278466767590dddb5ae6b624ea6b89494237b7d3
