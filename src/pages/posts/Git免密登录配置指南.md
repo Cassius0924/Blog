@@ -5,10 +5,10 @@ pubDate: 2023-03-24
 description: '这是一个简单教程，旨在帮助大家实现免密SSH登录，省去每次输入用户名和密码的烦恼。'
 author: 'Cassius0924'
 cover:
-    url: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
-    square: 'https://mmbiz.qpic.cn/mmbiz_png/2eJnj7UuAvbRjibJaTgND7PcUaWlLEqiaPRptJ4Pp5KkSysySq9wMkA7n45dicYV8TO2aDNeZkqovXMcVAxNapffg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1'
+    url: 'https://s2.loli.net/2023/03/24/wH3xWXve6C5NOAm.png'
+    square: 'https://s2.loli.net/2023/03/24/wH3xWXve6C5NOAm.png'
     alt: 'GitHub'
-tags: ["Linux", "SSH"]
+tags: ["Linux", "SSH", "Passwordless"]
 theme: 'light'
 featured: false
 ---
@@ -98,8 +98,4 @@ git remote set-url <repo_name> <ssh_url>
 
 > 虽然网上已经很多比这更优秀的教程了，但因为我总忘记具体操作流程，所以想写下来强化记忆。
 
-<<<<<<< HEAD
 > 是谁还不会Git SSH免密配置？好吧，不是你👀
-=======
-> 是谁还不会Git SSH免密配置？好吧，不是你👀
->>>>>>> 278466767590dddb5ae6b624ea6b89494237b7d3
