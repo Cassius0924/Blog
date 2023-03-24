@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/MarkdownPost.astro'
+layout: '../../layouts/Tile.astro'
 title: 'Google 搜索引擎使用技巧'
 pubDate: 2023-03-24
 description: '本文简单介绍了Google搜索引擎的几种高级搜索用法'

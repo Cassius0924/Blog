@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/MarkdownPost.astro'
+layout: '../../layouts/BaseLayout.astro'
 title: 'Docker + Nginx 部署个人静态博客指南'
 pubDate: 2023-03-24
 description: '通过本指南，您可以快速了解如何使用 Docker 和 Nginx 部署自己的静态博客网站。'
@@ -105,7 +105,7 @@ docker pull nginx
 
 - 复制容器内部的配置文件到服务器
 
-  ```shell
+  ```bash
   docker cp my-nginx:/etc/nginx/nginx.conf ~/nginx/nginx.conf
   docker cp my-nginx:/etc/nginx/conf.d ~/nginx/
   ```
@@ -263,6 +263,6 @@ docker pull nginx
 
   若有`my-nginx` 这个镜像表示运行成功，若没有则表示 Docker 运行出错了，检查`nginx.conf`和`default.conf`文件语法是否存在错误。
 
-###第七步：测试网站
+### 第七步：测试网站
 
 试在浏览器直接访问你的服务器IP，若部署成功你将看到你的网站。
