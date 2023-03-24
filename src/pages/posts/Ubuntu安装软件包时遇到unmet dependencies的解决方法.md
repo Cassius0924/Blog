@@ -5,9 +5,9 @@ pubDate: 2023-03-24
 description: '本文旨在解决Ubuntu用户遇到“The following packages have unmet dependencies”错误的问题'
 author: 'Cassius0924'
 cover:
-    url: 'https://s2.loli.net/2023/03/16/HsmExtPf2vRegYG.png'
-    square: 'https://s2.loli.net/2023/03/16/HsmExtPf2vRegYG.png'
-    alt: 'OpenCV'
+    url: 'https://s2.loli.net/2023/03/24/JGsMUbp6lIvejgS.png'
+    square: 'https://s2.loli.net/2023/03/24/JGsMUbp6lIvejgS.png'
+    alt: 'Ubuntu unmet dependencies'
 tags: ["Linux", "Ubuntu", "Skill"]
 theme: 'light'
 featured: false
@@ -21,7 +21,7 @@ featured: false
 
 逐个安装缺少的依赖包，直到提示删除冲突的软件包并继续安装。
 
-### 样例
+### 例子
 
 例如在安装`libvtk7.1-qt`时提示如下图所示：
 
