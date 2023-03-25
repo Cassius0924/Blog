@@ -14,7 +14,6 @@
     --footer-directory-title-color-hover: #000;
 }
 
-
 *,
 ::before,
 ::after {
@@ -6073,6 +6072,7 @@ html.no-touch.no-reduced-motion .tile.tile-list[data-focus-method=key] .media--v
 
 .touch .image-grid.body-copy-wide .component-content {
     width: component-content-width
+
 }
 
 @media only screen and (max-width: 734px) {

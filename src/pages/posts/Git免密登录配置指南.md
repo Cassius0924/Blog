@@ -59,7 +59,7 @@ git remote set-url <repo_name> <ssh_url>
    ```bash
    ssh-keygen -t rsa -C "your_email@example.com"
    ```
-
+   
    > 别直接粘贴上去啊喂！改改后面的邮箱。
 
 2. 按照提示输入密钥保存路径和密码，建议直接回车使用默认值：

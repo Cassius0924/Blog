@@ -6,6 +6,15 @@ import {SITE_URL} from './src/consts';
 
 function pipeline() {
     return [
+        //文章添加class: markdown-body
+        () => (tree) => {
+            visit(tree, 'element', (node, index) => {
+                if (node.tagName === 'article') {
+                    node.properties.className = ['markdown-body'];
+                }
+            })
+        },
+
 
         () => (tree) => {
             visit(tree, 'element', (node, index) => {       // 遍历所有的节点
