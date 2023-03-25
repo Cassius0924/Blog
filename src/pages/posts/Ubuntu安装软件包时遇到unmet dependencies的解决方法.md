@@ -10,7 +10,7 @@ cover:
     alt: 'Ubuntu unmet dependencies'
 tags: ["Linux", "Ubuntu", "Skill"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Ubuntu 安装软件包时遇到 unmet dependencies 的解决方法

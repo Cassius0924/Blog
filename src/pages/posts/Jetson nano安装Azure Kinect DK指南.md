@@ -10,7 +10,7 @@ cover:
     alt: 'Azure Kinect'
 tags: ["Linux", "Ubuntu", "Jetson", "Azure Kinect", "Microsoft"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Jetson nano 安装 Azure Kinect DK 指南

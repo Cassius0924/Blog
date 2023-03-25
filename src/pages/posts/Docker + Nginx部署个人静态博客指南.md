@@ -10,7 +10,7 @@ cover:
     alt: 'Docker'
 tags: ["Linux", "Docker", "Nginx", "Server", "Blog"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Docker + Nginx 部署个人静态博客指南

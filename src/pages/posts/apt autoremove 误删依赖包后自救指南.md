@@ -10,7 +10,7 @@ cover:
     alt: 'Linux APT'
 tags: ["Linux", "Ubuntu", "Shell", "Skill"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # apt autoremove 误删依赖包后自救指南

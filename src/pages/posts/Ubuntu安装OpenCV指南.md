@@ -10,7 +10,7 @@ cover:
     alt: 'OpenCV'
 tags: ["Linux", "Ubuntu", "OpenCV"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Ubuntu 安装 OpenCV 指南

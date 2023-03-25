@@ -10,7 +10,7 @@ cover:
     alt: 'PCL'
 tags: ["Linux", "Ubuntu", "Jetson", "PCL"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Jetson nano 安装 PCL 指南

@@ -10,7 +10,7 @@ cover:
     alt: 'Google GIF'
 tags: ["Google", "Skill"]
 theme: 'light'
-featured: false
+featured: ture
 ---
 
 # Google 搜索引擎使用技巧
