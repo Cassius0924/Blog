@@ -10,7 +10,7 @@ cover:
     alt: 'GitHub'
 tags: ["Linux", "SSH", "Passwordless"]
 theme: 'light'
-featured: false
+featured: true 
 ---
 
 # Git免密登录配置指南

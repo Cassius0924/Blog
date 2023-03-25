@@ -1,7 +1,7 @@
 {
 	"name": "blog",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -13,7 +13,6 @@
 	"dependencies": {
 		"@astrojs/rss": "^2.1.1",
 		"astro": "^2.0.11",
-		"github-markdown-css": "^5.2.0",
 		"md5": "^2.3.0",
 		"rehype": "^12.0.1",
 		"unist-util-visit": "^4.1.2"

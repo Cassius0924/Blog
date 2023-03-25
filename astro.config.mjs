@@ -6,19 +6,9 @@ import {SITE_URL} from './src/consts';
 
 function pipeline() {
     return [
-        //文章添加class: markdown-body
-        () => (tree) => {
-            visit(tree, 'element', (node, index) => {
-                console.log("!!!!!!!!1")
-                if (node.tagName === 'article') {
-                    node.properties.className = ['markdown-body'];
-                }
-            })
-        },
-
 
         () => (tree) => {
-            visit(tree, 'element', (node, index) => {       // 遍历所有的节点
+            visit(tree, 'element', (node, index) => {       // 遍历所有的节点，visit是一个工具函数，可以遍历所有的节点
                 if (node.tagName === 'p' && node.children[0].tagName === 'img') {   // 图片
                     node.tagName = 'figure';                    // p -> figure
 

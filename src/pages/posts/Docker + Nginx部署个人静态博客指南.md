@@ -223,7 +223,7 @@ docker pull nginx
   npm run build
   ```
 
-	> 一定要打包后才再挂载，Nginx 只能解析 html 文件。
+  > 一定要打包后才再挂载，Nginx 只能解析 html 文件。
 
 - 查看打包后的文件：
 
