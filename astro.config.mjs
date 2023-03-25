@@ -7,87 +7,87 @@ import {SITE_URL} from './src/consts';
 function pipeline() {
     return [
 
-        () => (tree) => {
-            visit(tree, 'element', (node, index) => {       // 遍历所有的节点
-                if (node.tagName === 'p' && node.children[0].tagName === 'img') {   // 图片
-                    node.tagName = 'figure';                    // p -> figure
-
-                    let img = node.children[0];                 // img
-                    let sign = md5(img.properties.src);         // 图片的md5值
-                    let data = img.properties.alt.split("|");   // alt="alt|size"
-                    let alt = data[0];                          // alt
-                    let size = "big";                           // size
-                    if (data.length > 1) {                      // 如果有size
-                        size = data[1];                         // size
-                    }
-
-                    let classes = ['image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on'];   // class
-                    classes.push(`image-${size}`);
-
-                    node.properties.className = classes;        // class
-                    node.children = [                           // figure的子节点
-                        {
-                            type: 'element',
-                            tagName: 'div',
-                            properties: {className: ['component-content']},
-                            children: [
-                                {
-                                    type: 'element',            // 图片的父节点
-                                    tagName: 'div',
-                                    properties: {className: ['image-sharesheet']},
-                                    children: [
-                                        {
-                                            type: 'element',
-                                            tagName: 'div',
-                                            properties: {
-                                                className: [`image image-load image-asset image-${sign}`],
-                                                id: `lht${sign}`
-                                            },
-                                            children: [
-                                                {
-                                                    type: 'element',
-                                                    tagName: 'picture',
-                                                    properties: {className: ['picture']},
-                                                    children: [
-                                                        {
-                                                            type: 'element',
-                                                            tagName: 'img',
-                                                            properties: {
-                                                                'data-src': img.properties.src,
-                                                                alt: alt,
-                                                                className: ['picture-image'],
-                                                            }
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    type: 'element',            // 图片描述的父节点
-                                    tagName: 'div',
-                                    properties: {className: ['image-description']},
-                                    children: [
-                                        {
-                                            type: 'element',
-                                            tagName: 'div',
-                                            properties: {className: ['image-caption']},
-                                            children: [
-                                                {
-                                                    type: 'text',
-                                                    value: alt
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            })
-        },
+        // () => (tree) => {
+        //     visit(tree, 'element', (node, index) => {       // 遍历所有的节点
+        //         if (node.tagName === 'p' && node.children[0].tagName === 'img') {   // 图片
+        //             node.tagName = 'figure';                    // p -> figure
+        //
+        //             let img = node.children[0];                 // img
+        //             let sign = md5(img.properties.src);         // 图片的md5值
+        //             let data = img.properties.alt.split("|");   // alt="alt|size"
+        //             let alt = data[0];                          // alt
+        //             let size = "big";                           // size
+        //             if (data.length > 1) {                      // 如果有size
+        //                 size = data[1];                         // size
+        //             }
+        //
+        //             let classes = ['image component image-fullbleed body-copy-wide nr-scroll-animation nr-scroll-animation--on'];   // class
+        //             classes.push(`image-${size}`);
+        //
+        //             node.properties.className = classes;        // class
+        //             node.children = [                           // figure的子节点
+        //                 {
+        //                     type: 'element',
+        //                     tagName: 'div',
+        //                     properties: {className: ['component-content']},
+        //                     children: [
+        //                         {
+        //                             type: 'element',            // 图片的父节点
+        //                             tagName: 'div',
+        //                             properties: {className: ['image-sharesheet']},
+        //                             children: [
+        //                                 {
+        //                                     type: 'element',
+        //                                     tagName: 'div',
+        //                                     properties: {
+        //                                         className: [`image image-load image-asset image-${sign}`],
+        //                                         id: `lht${sign}`
+        //                                     },
+        //                                     children: [
+        //                                         {
+        //                                             type: 'element',
+        //                                             tagName: 'picture',
+        //                                             properties: {className: ['picture']},
+        //                                             children: [
+        //                                                 {
+        //                                                     type: 'element',
+        //                                                     tagName: 'img',
+        //                                                     properties: {
+        //                                                         'data-src': img.properties.src,
+        //                                                         alt: alt,
+        //                                                         className: ['picture-image'],
+        //                                                     }
+        //                                                 }
+        //                                             ]
+        //                                         }
+        //                                     ]
+        //                                 }
+        //                             ]
+        //                         },
+        //                         {
+        //                             type: 'element',            // 图片描述的父节点
+        //                             tagName: 'div',
+        //                             properties: {className: ['image-description']},
+        //                             children: [
+        //                                 {
+        //                                     type: 'element',
+        //                                     tagName: 'div',
+        //                                     properties: {className: ['image-caption']},
+        //                                     children: [
+        //                                         {
+        //                                             type: 'text',
+        //                                             value: alt
+        //                                         }
+        //                                     ]
+        //                                 }
+        //                             ]
+        //                         }
+        //                     ]
+        //                 }
+        //             ]
+        //         }
+        //     })
+        // },
 
         // //这里是为了解决markdown中的代码块
         // () => (tree) => {
