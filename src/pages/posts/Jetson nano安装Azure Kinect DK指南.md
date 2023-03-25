@@ -62,14 +62,13 @@ Jetson nano是ARM64架构，而非AMD64架构。所以环境配置起来会和AM
 - 安装libk4a
 
 	```shell
-	curl -O 	https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/libk/libk4a1.4/libk4a1.4_1.4.1_arm64.deb && sudo dpkg -i libk4a1.4_1.4.1_arm64.deb
+	curl -O https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/libk/libk4a1.4/libk4a1.4_1.4.1_arm64.deb && sudo dpkg -i libk4a1.4_1.4.1_arm64.deb
 	```
 
 - 安装libk4a-dev
 
   ```shell
-  curl -O
-  https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/libk/libk4a1.4-dev/libk4a1.4-dev_1.4.1_arm64.deb && sudo dpkg -i libk4a1.4-dev_1.4.1_arm64.deb
+  curl -O https://packages.microsoft.com/ubuntu/18.04/multiarch/prod/pool/main/libk/libk4a1.4-dev/libk4a1.4-dev_1.4.1_arm64.deb && sudo dpkg -i libk4a1.4-dev_1.4.1_arm64.deb
   ```
 
 ### 第三步：安装 k4a-tools
