@@ -9,6 +9,7 @@ function pipeline() {
         //文章添加class: markdown-body
         () => (tree) => {
             visit(tree, 'element', (node, index) => {
+                console.log("!!!!!!!!1")
                 if (node.tagName === 'article') {
                     node.properties.className = ['markdown-body'];
                 }
