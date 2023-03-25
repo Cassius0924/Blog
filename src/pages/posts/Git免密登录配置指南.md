@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/ArchivePostList.astro'
+layout: '../../layouts/MarkdownPost.astro'
 title: 'Git 免密登录配置指南'
 pubDate: 2023-03-24
 description: '这是一个简单教程，旨在帮助大家实现免密SSH登录，省去每次输入用户名和密码的烦恼。'

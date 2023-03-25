@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BaseLayout.astro'
+layout: '../../layouts/MarkdownPost.astro'
 title: 'Docker + Nginx 部署个人静态博客指南'
 pubDate: 2023-03-24
 description: '通过本指南，您可以快速了解如何使用 Docker 和 Nginx 部署自己的静态博客网站。'
@@ -38,6 +38,7 @@ sudo apt install docker
 ```bash
 docker pull nginx
 ```
+
 > 镜像名后不加版本号表示拉取最新版，若希望拉取指定版本则需在镜像名后加上tag，例如`docker pull nginx:1.16`。
 
 ### 第三步：获取 Nginx 的配置文件
@@ -89,6 +90,7 @@ docker pull nginx
               ├── html/
               └── conf/
   ```
+  
   > `nginx.conf`是 Nginx 主配置文件，用于设置全局的 Nginx 配置。
   >
   > `default.conf`是 Nginx 的 server 的配置文件。这个文件中通常包含了 HTTP 或 HTTPS 服务器的基本配置信息，如监听端口、虚拟主机等。
@@ -231,7 +233,6 @@ docker pull nginx
   ```
 
   确保目录内存在 index.html 文件。
-
 
 ### 第六步：部署网站
 
