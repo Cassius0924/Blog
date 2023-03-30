@@ -39,12 +39,12 @@ jobs:
           USERNAME: ${{ secrets.SSH_USERNAME }}
           SERVER_DESTINATION: /root/blog/dist/  # 部署到目标文件夹
           
-      - name: Process md File            # 第五步，处理MD文件
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }} # 下面三个配置与上一步类似
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_TOKEN }}
-          # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
-          script: |
-            echo '1'
+            #- name: Process md File            # 第五步，处理MD文件
+            #  uses: appleboy/ssh-action@master
+            #  with:
+            #    host: ${{ secrets.SSH_HOST }} # 下面三个配置与上一步类似
+            #    username: ${{ secrets.SSH_USERNAME }}
+            #    key: ${{ secrets.SSH_TOKEN }}
+            #    # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
+            #    script: |
+            #      echo '1'
