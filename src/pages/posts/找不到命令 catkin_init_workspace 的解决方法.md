@@ -52,3 +52,10 @@ echo "source /opt/ros/melodic/setup.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
+如果你用的是 Zsh，则执行以下命令：
+
+```bash
+echo "source /opt/ros/melodic/setup.sh" >> ~/.zshrc
+source ~/.zshrc
+```
+

@@ -99,7 +99,7 @@ sudo apt-get install cmake git build-essential libgtk2.0-dev pkg-config libavcod
 	将刚刚复制的路径粘贴在引号之间。
 	
 	```shell
-	sudo echo 'lib文件夹路径' >> /etc/ld.so.conf
+	sudo echo 'include lib文件夹路径' >> /etc/ld.so.conf
 	```
 	
 - 更新配置文件：
