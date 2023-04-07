@@ -1,3 +1,18 @@
+---
+layout: '../../layouts/MarkdownPost.astro'
+title: 'Jetson nano 安装 Jtop 和 Jtop 使用指南s'
+pubDate: 2023-03-24
+description: '本文简单介绍了Google搜索引擎的几种高级搜索用法'
+author: 'Cassius0924'
+cover:
+    url: 'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/New__revised_0312_Keyword_blog-header-animated-final_YCPcPYO.gif'
+    square: 'https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/New__revised_0312_Keyword_blog-header-animated-final_YCPcPYO.gif'
+    alt: 'Google GIF'
+tags: ["Jetson", "Linux"]
+theme: 'light'
+featured: ture
+---
+
 # Jetson nano 安装 Jtop 和 Jtop 使用指南
 
 本文将为你介绍 Jtop，它是一个基于 Python 的系统监控工具。Jtop 通过终端界面展示系统资源的使用情况，包括 CPU、内存、磁盘、网络等。本文将详细介绍 Jtop 各个面板的作用和功能。
