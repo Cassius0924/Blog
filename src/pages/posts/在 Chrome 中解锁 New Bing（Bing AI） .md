@@ -1,8 +1,23 @@
+---
+layout: '../../layouts/MarkdownPost.astro'
+title: '在 Chrome 中解锁 New Bing（Bing AI）'
+pubDate: 2023-04-08
+description: '本文旨在帮助大家在 Chrome 中使用 New Bing（Bing AI）。'
+author: 'Cassius0924'
+cover:
+    url: 'https://s2.loli.net/2023/04/12/QERJ7XMlsh5NufH.png'
+    square: 'https://s2.loli.net/2023/04/12/QERJ7XMlsh5NufH.png'
+    alt: 'BingAI'
+tags: ["New Bing", "Chrome", "Chrome extension"]
+theme: 'light'
+featured: ture
+---
+
 # 在 Chrome 中解锁 New Bing（Bing AI）
 
-前几周，New Bing 的申请已经**全面开放**，无需等待，直接即可通过申请。但微软限制了 New Bing 只能在自家的 Edge 浏览器使用，对于我这种晚年 Chrome 玩家就很苦恼，不习惯 Edge。
-
 本文旨在帮助大家在 Chrome 中使用 New Bing（Bing AI）。
+
+前几周，New Bing 的申请已经**全面开放**，无需等待，直接即可通过申请。但微软限制了 New Bing 只能在自家的 Edge 浏览器使用，对于我这种万年 Chrome 玩家就很苦恼，不习惯 Edge。
 
 ## 前提
 

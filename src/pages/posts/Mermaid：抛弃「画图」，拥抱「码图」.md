@@ -1,6 +1,19 @@
-# Mermaid：抛弃「画图」，拥抱「码图」
+---
+layout: '../../layouts/MarkdownPost.astro'
+title: 'Jetson nano 安装 Azure Kinect DK 指南'
+pubDate: 2023-03-24
+description: 'Mermaid 是一个可以让你通过代码来绘制流程图、序列图、甘特图等各种图表的工具。'
+author: 'Cassius0924'
+cover:
+    url: 'https://s2.loli.net/2023/03/24/HZq6GLmaM839s7b.jpg'
+    square: 'https://s2.loli.net/2023/03/24/HZq6GLmaM839s7b.jpg'
+    alt: 'Mermaid'
+tags: ["Mermaid", "Markdown"]
+theme: 'light'
+featured: ture
+---
 
-简述Mermaid码图的优势，教你如何在Typora使用Mermaid，以及介绍Mermaid语法。
+# Mermaid：抛弃「画图」，拥抱「码图」
 
 Mermaid 是一个可以让你通过代码来绘制流程图、序列图、甘特图等各种图表的工具。
 
