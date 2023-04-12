@@ -1,8 +1,25 @@
+---
+layout: '../../layouts/MarkdownPost.astro'
+title: '基于 Open3D C++ 版实现点云数据的配准、相加和显示'
+pubDate: 2023-04-10
+description: '本文介绍如何使用 Open3D C++ 库来进行点云的配准、相加和可视化显示。'
+author: 'Cassius0924'
+cover:
+    url: 'https://s2.loli.net/2023/04/12/SsedX24UrHELNDQ.png'
+    square: 'https://s2.loli.net/2023/04/12/SsedX24UrHELNDQ.png'
+    alt: 'Open3D'
+tags: ["Open3D", "Point cloud", "C++"]
+theme: 'light'
+featured: ture
+---
+
 # 基于 Open3D C++ 版实现点云数据的配准、相加和显示
 
-
+本文介绍如何使用 Open3D C++ 库来进行点云的配准、相加和可视化显示。Open3D 是一个开源的多维数据处理工具箱，支持点云、图像和三维几何等多种类型的数据处理和可视化。
 
 ## 点云读取
+
+使用 `ReadPointCloud()` 函数可以轻松读取 pcd 和 ply 点云文件：
 
 ```C++
 // 读取 pcd 和 ply 点云文件
@@ -15,23 +32,18 @@ open3d::io::ReadPointCloud("pcd-data/2.pcd", *target);
 // open3d::io::ReadPointCloud("pcd-data/2.ply", *target);
 ```
 
-
-
 ## 点云上色
 
+为两份点云上上不同的颜色：
+
 ```C++
-// 为两份点云上上不同的颜色
 source->PaintUniformColor({1, 0.706, 0});    // source 为黄色
 target->PaintUniformColor({0, 0.651, 0.929});// target 为蓝色
 ```
 
-
-
-
-
-
-
 ## 点云配准
+
+使用 Open3D 提供的 `RegistrationICP()` 函数进行点云配准。代码如下：
 
 ```c++
 // 为两个点云分别进行outlier removal
@@ -53,21 +65,17 @@ reg_p2p = open3d::pipelines::registration::RegistrationICP(
 source->Transform(reg_p2p.transformation_);
 ```
 
-
-
 ## 点云相加
 
-这一部很简单，直接使用重载运算符`+=`即可。
+这一步很简单，使用重载运算符 `+=` 将两份点云数据相加：
 
 ```C++
 *source += *target;
 ```
 
-
-
 ## 点云显示
 
-将两份点云数据在同一个窗口进行可视化显示。
+将两份点云数据在同一个窗口进行可视化显示：
 
 ```C++
 std::vector<std::shared_ptr<const open3d::geometry::Geometry>> geometries;
