@@ -1,4 +1,5 @@
 ---
+==================
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Jetson nano 安装 Azure Kinect DK 指南'
 pubDate: 2023-03-24
@@ -140,6 +141,6 @@ gantt
 
 ![Mermaid Live Editor](https://s2.loli.net/2023/04/07/A7P9GRmLD4nlq5d.png)
 
-还提供了另一个[在线编辑器](https://www.mermaidchart.com/)，相比于上一个编辑器，这个编辑器可以保存的你图表项目。并且即将推出多人协作功能，不过收费。具体支持功能以及价格见下图：
+官网还提供了另一个[在线编辑器](https://www.mermaidchart.com/)，相比于上一个编辑器，这个编辑器可以保存的你图表项目。并且即将推出多人协作功能，不过需要收费。具体支持功能以及价格见下图：
 
 ![MermaidChart Pricing](https://s2.loli.net/2023/04/07/qzYdCI4875vZJyg.png)
