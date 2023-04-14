@@ -1,5 +1,4 @@
 ---
-==================
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Jetson nano 安装 Azure Kinect DK 指南'
 pubDate: 2023-03-24

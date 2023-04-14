@@ -6,7 +6,7 @@ description: 'apt autoremove后程序不能用了？别慌，跟着教程一步�
 author: 'Cassius0924'
 cover:
     url: 'https://s2.loli.net/2023/03/24/SnH3LoVEqXbgalP.jpg'
-    square: 'https://s2.loli.net/2023j/03/24/SnH3LoVEqXbgalP.jpg'
+    square: 'https://s2.loli.net/2023/03/24/SnH3LoVEqXbgalP.jpg'
     alt: 'Linux APT'
 tags: ["Linux", "Ubuntu", "Shell", "Skill"]
 theme: 'light'
