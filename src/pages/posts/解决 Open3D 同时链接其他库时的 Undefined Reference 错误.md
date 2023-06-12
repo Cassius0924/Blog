@@ -7,8 +7,8 @@ author: 'Cassius0924'
 cover:
     url: 'https://s2.loli.net/2023/06/09/9CkQ2fANYiyVmZj.png'
     square: 'https://s2.loli.net/2023/06/09/9CkQ2fANYiyVmZj.png'
-    alt: 'SSH'
-tags: ["Linux", "Open3D", "C++"]
+    alt: 'Open3D'
+tags: ["Linux", "Open3D"]
 theme: 'light'
 featured: ture
 ---
