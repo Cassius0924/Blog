@@ -21,7 +21,7 @@ featured: ture
 
 使用 `ReadPointCloud()` 函数可以轻松读取 pcd 和 ply 点云文件：
 
-```Cpp
+```cpp
 // 读取 pcd 和 ply 点云文件
 auto source = std::make_shared<open3d::geometry::PointCloud>();
 auto target = std::make_shared<open3d::geometry::PointCloud>();
@@ -36,7 +36,7 @@ open3d::io::ReadPointCloud("pcd-data/2.pcd", *target);
 
 为两份点云上上不同的颜色：
 
-```Cpp
+```cpp
 source->PaintUniformColor({1, 0.706, 0});    // source 为黄色
 target->PaintUniformColor({0, 0.651, 0.929});// target 为蓝色
 ```
@@ -45,7 +45,7 @@ target->PaintUniformColor({0, 0.651, 0.929});// target 为蓝色
 
 使用 Open3D 提供的 `RegistrationICP()` 函数进行点云配准。代码如下：
 
-```Cpp
+```cpp
 // 为两个点云分别进行outlier removal
 //auto processed_source = source->RadiusOutlierRemoval(16, 0.5);
 //auto processed_target = target->RadiusOutlierRemoval(16, 0.5);
@@ -69,7 +69,7 @@ source->Transform(reg_p2p.transformation_);
 
 这一步很简单，使用重载运算符 `+=` 将两份点云数据相加：
 
-```Cpp
+```cpp
 *source += *target;
 ```
 
@@ -77,7 +77,7 @@ source->Transform(reg_p2p.transformation_);
 
 将两份点云数据在同一个窗口进行可视化显示：
 
-```Cpp
+```cpp
 std::vector<std::shared_ptr<const open3d::geometry::Geometry>> geometries;
 geometries.push_back(source);
 geometries.push_back(target);
