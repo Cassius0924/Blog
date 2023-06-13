@@ -8,7 +8,7 @@ cover:
     url: 'https://s2.loli.net/2023/04/14/SGT6eMtA1RNf8wi.png'
     square: 'https://s2.loli.net/2023/04/14/SGT6eMtA1RNf8wi.png'
     alt: 'MacOS'
-tags: ["MacOS", "Setting"]
+tags: ["MacOS"]
 theme: 'light'
 featured: ture
 ---

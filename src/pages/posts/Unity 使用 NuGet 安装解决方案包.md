@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Unity 脚本使用 NuGet 安装解决方案包'
-pubDate: 2023-06-0
+pubDate: 2023-06-01
 description: ' 本文旨在教大家如何在 Unity 中使用 NuGet 安装解决方案包。'
 author: 'Cassius0924'
 cover:
