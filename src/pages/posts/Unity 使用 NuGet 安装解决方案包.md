@@ -8,7 +8,7 @@ cover:
     url: 'https://s2.loli.net/2023/06/09/mRxtlD7Y5LbUrBa.png'
     square: 'https://s2.loli.net/2023/06/09/mRxtlD7Y5LbUrBa.png'
     alt: 'NuGet'
-tags: ["Linux", "Unity", "C#"]
+tags: ["Linux", "Unity", "C Sharp"]
 theme: 'light'
 featured: ture
 ---
