@@ -72,7 +72,9 @@ cd protobuf-all-3.20.3
 
 ```shell
 sudo make
+sudo make check #这一步可能会报错，解决方法见下文
 sudo make install
+sudo ldconfig
 ```
 
 编译过程可能需要一些时间，请耐心等待。
@@ -86,3 +88,52 @@ protoc --version
 ```
 
 如果安装成功，将显示 Protobuf 的版本号。
+
+## 解决 make check 报错
+在执行 `make check` 时，可能会报错，错误信息如下：
+
+```shell
+FAIL: protobuf-test
+PASS: protobuf-lazy-descriptor-test
+PASS: protobuf-lite-test
+PASS: google/protobuf/compiler/zip_output_unittest.sh
+PASS: google/protobuf/io/gzip_stream_unittest.sh
+PASS: protobuf-lite-arena-test
+PASS: no-warning-test
+============================================================================
+Testsuite summary for Protocol Buffers 3.19.4
+============================================================================
+# TOTAL: 7
+# PASS:  6
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  1
+# XPASS: 0
+# ERROR: 0
+============================================================================
+See src/test-suite.log
+Please report to protobuf@googlegroups.com
+============================================================================
+```
+![Make Check Error](https://s2.loli.net/2023/06/13/N7k5xDE9AfhUTeM.png)
+
+`protobuf-test` 测试不通过，这个错误是因为加载大型数据集时内存溢出导致的。
+
+解决方法是加大可用内存或增加内存 Swap 分区，这里以 Jetson Xavier NX 增加内存 Swap 分区为例，此前请先确保已经安装 Jtop 工具：
+
+```shell
+sudo jtop
+```
+
+先切换到4号内存面板，接着点击右边的 Create new 按钮，点击三次，创建三个内存 Swap 分区即可。
+
+![Jtop Men Panle](https://s2.loli.net/2023/06/13/GIaNmi436kAXz5l.png)
+
+![Jtop Swapfile](https://s2.loli.net/2023/06/13/siFRxYDvQl3toAS.png)
+
+最后按`Q`退出 Jtop 工具。
+
+重新执行 `make check` 即可。
+
+![Make Check Agian](https://s2.loli.net/2023/06/13/Vx5liabgdEqA4DK.png)
+
