@@ -13,7 +13,7 @@ theme: 'light'
 featured: ture
 ---
 
-# MacOS 配置 MASM + DOSBox 汇编环境
+# macOS 配置 MASM + DOSBox 汇编环境
 
 该文章旨在帮助在 MacOS 系统下想要学习汇编语言的开发者配置 MASM + DOSBox 环境。
 
